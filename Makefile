@@ -27,7 +27,7 @@ build/Makefile:
 	$(CMAKE) -B build sentry-native
 
 
-# SENTRY
+# SENTRYY
 setup_release: create_release associate_commits
 create_release:
 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
