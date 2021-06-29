@@ -1,5 +1,5 @@
 SENTRY_ORG=testorg-az
-SENTRY_PROJECT=sentry-native
+SENTRY_PROJECT=qt-04
 VERSION ?= $(shell sentry-cli releases propose-version)
 CMAKE=cmake
 
@@ -39,13 +39,13 @@ upload_debug_files:
 	sentry-cli upload-dif --org testorg-az --project $(SENTRY_PROJECT) --wait --include-sources bin/
 
 run_crash:
-	SENTRY_DSN=https://b5ceabee4e4a4cd6b21afe3bd2cbbed4@sentry.io/1720457 bin/example --crash
+	SENTRY_DSN=https://10d87583a91d441a9ccae1eb7c5a8d6a@o87286.ingest.sentry.io/5838287 bin/example --crash
 
 run_message:
-	SENTRY_DSN=https://b5ceabee4e4a4cd6b21afe3bd2cbbed4@sentry.io/1720457 bin/example --message
+	SENTRY_DSN=https://10d87583a91d441a9ccae1eb7c5a8d6a@o87286.ingest.sentry.io/5838287 bin/example --message
 
 run_clean:
-	SENTRY_DSN=https://b5ceabee4e4a4cd6b21afe3bd2cbbed4@sentry.io/1720457 bin/example
+	SENTRY_DSN=https://10d87583a91d441a9ccae1eb7c5a8d6a@o87286.ingest.sentry.io/5838287 bin/example
 
 clean:
 	rm -rf ./bin/exampl*
