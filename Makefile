@@ -24,7 +24,7 @@ bin/crashpad_handler: sentry-makefile
 sentry-makefile: build/Makefile
 
 build/Makefile:
-	$(CMAKE) -B build sentry-native
+	$(CMAKE) -B build -D SENTRY_INTEGRATION_QT=YES sentry-native
 
 
 # SENTRY

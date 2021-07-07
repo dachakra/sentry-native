@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "sentry.h"
+#include <QQApplication>
+
 // /bin has crashpad binary executables
 
 #ifdef _WIN32
